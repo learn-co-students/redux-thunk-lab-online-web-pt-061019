@@ -10,7 +10,7 @@ export default class CatList extends Component {
     render() {
         return(
             <div>
-                {this.listCats()}
+                {this.props.loading  ? <h2>Loading!</h2> : this.listCats()}
             </div>
         )
     }
